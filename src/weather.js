@@ -14,7 +14,7 @@ function Weather() {
       setLoading(true);
       try {
         const response = await fetch(
-          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=243ed5b86cf5df232e1b3a235fe93baf`,
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}`,
           {
             method: "GET",
           }
